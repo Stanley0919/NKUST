@@ -1,7 +1,11 @@
+import java.util.Locale;
+
 public class Charate {
     int HP; //data member
     int MP; //data member
     int ATTACK; //data member
+    String name;
+    Charate getMyName;
 
 
 
@@ -17,6 +21,11 @@ public class Charate {
 
 
     }
+    String getMyName() {
+        return this.name;
+    }
 
-
+    void ShoutMyName() {
+        System.out.println("MY NAME IS "+ getMyName().toUpperCase() + "!" );
+    }
 }
