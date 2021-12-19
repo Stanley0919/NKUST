@@ -1,11 +1,12 @@
-import java.util.Locale;
-
 public class Charate {
     int HP; //data member
     int MP; //data member
     int ATTACK; //data member
     String name;
     Charate getMyName;
+    String Weapon;
+    String Skill;
+
 
 
 
@@ -21,11 +22,20 @@ public class Charate {
 
 
     }
-    String getMyName() {
-        return this.name;
+
+
+
+    String getMySkill() {
+        return this.Skill;
     }
 
-    void ShoutMyName() {
-        System.out.println("MY NAME IS "+ getMyName().toUpperCase() + "!" );
+    void MySkill() {
+        System.out.println("看招吧 " +  getMySkill().toString() + "!" );
     }
+
+    String getMyWeapon () { return this.Weapon;}
+
+    void Weapon() {System.out.println("我的武器是" + getMyWeapon().toString() + "!"  );}
+
 }
+
