@@ -6,9 +6,7 @@ public class Charate {
     Charate getMyName;
     String Weapon;
     String Skill;
-
-
-
+    String Att;
 
     Charate(int roleHP, int roleMP, int roleATTACK) {
         HP = roleHP;
@@ -19,12 +17,7 @@ public class Charate {
         System.out.println("HP:" + HP);
         System.out.println("MP:" + MP);
         System.out.println("ATTACK:" + ATTACK);
-
-
     }
-
-
-
     String getMySkill() {
         return this.Skill;
     }
@@ -37,5 +30,8 @@ public class Charate {
 
     void Weapon() {System.out.println("我的武器是" + getMyWeapon().toString() + "!"  );}
 
+    String getMyAtt(){ return this.Att; }
+
+    void  Att() {System.out.println("嘿嘿用普攻偷摸你一下 " +getMyAtt().toString()  );}
 }
 
